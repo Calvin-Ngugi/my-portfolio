@@ -1,20 +1,29 @@
 import { BiRightArrowCircle } from "react-icons/bi";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Header = ({ isDark }: any) => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-screen md:h-[60%] max-w-[70%] m-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:h-[70%] max-w-[70%] m-auto">
         {/* left */}
-        <div className="flex flex-col justify-center">
-          <p className="text-[40px]">Hi there! I'm</p>
+        <div className="flex flex-col mt-10 md:mt-20">
+          <p className="text-[40px]">Hi there!👋🏽 I'm</p>
           <p className="font-bold text-[45px]">Calvin</p>
           <p className="text-base text-gray-600 md:w-[80%]">
             A full-stack developer with a passion for developing 
             with experience building out applications, web and mobile, with the
-            latest technologies.
+            latest technologies. Connect with me on:
           </p>
+          <div className="flex">
+            <a href="https://www.linkedin.com/in/calvin-ngugi-9a50a61b7/" className="me-4 mt-2">
+            <BsLinkedin className="h-5 w-5"/>
+            </a>
+            <a href="https://github.com/Calvin-Ngugi" className="me-4 mt-2">
+            <BsGithub className="h-5 w-5"/>
+            </a>
+          </div>
           <div
-            className={`sm:w-[160px] cursor-pointer flex justify-between mt-5 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
+            className={`sm:w-[160px] cursor-pointer flex items-center justify-between mt-5 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
               isDark
                 ? `border-white hover:bg-slate-100 hover:text-slate-900`
                 : `border-black hover:bg-slate-900 hover:text-slate-100`
@@ -25,7 +34,7 @@ const Header = ({ isDark }: any) => {
           </div>
         </div>
         {/* right */}
-        <div className="flex flex-col md:justify-center items-start md:items-center">
+        <div className="flex flex-col md:justify-end items-start md:items-center">
           <div className="flex relative">
             <img
               src="urahara.PNG"
