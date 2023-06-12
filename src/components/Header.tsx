@@ -9,20 +9,19 @@ const Header = ({ isDark }: any) => {
           <p className="text-[40px]">Hi there! I'm</p>
           <p className="font-bold text-[45px]">Calvin</p>
           <p className="text-base text-gray-600 md:w-[80%]">
-            A developer with a passion for developing scalable web applications
-            and working across the full stack.
+            A full-stack developer with a passion for developing 
+            with experience building out applications, web and mobile, with the
+            latest technologies.
           </p>
-          <div className={`sm:w-[160px] cursor-pointer flex justify-between mt-5 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
+          <div
+            className={`sm:w-[160px] cursor-pointer flex justify-between mt-5 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
               isDark
                 ? `border-white hover:bg-slate-100 hover:text-slate-900`
                 : `border-black hover:bg-slate-900 hover:text-slate-100`
-            }`}>
-          <button
-            className={`border-transparent`}
+            }`}
           >
-            Contact Me
-          </button>
-            <BiRightArrowCircle className="w-8 h-7 ms-4"/>
+            <button className={`border-transparent`}>Contact Me</button>
+            <BiRightArrowCircle className="w-8 h-7 ms-4" />
           </div>
         </div>
         {/* right */}
