@@ -1,9 +1,9 @@
 import Header from "./Header"
 
-const MainContainer = () => {
+const MainContainer = ({isDark}:any) => {
   return (
     <div className="h-screen m-auto">
-      <Header />
+      <Header isDark={isDark}/>
     </div>
   )
 }

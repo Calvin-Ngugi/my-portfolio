@@ -18,6 +18,19 @@ html, body{
   overflow-x: hidden;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-border {
+  animation: rotate 10s linear infinite;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
