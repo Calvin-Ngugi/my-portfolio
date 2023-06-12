@@ -14,7 +14,7 @@ export default {
         "2xl": "1536px",
       },
       colors: {
-        primary: "#f5f5f5",
+        primary: "#efefef",
         secondary: "#011122",
       },
     },

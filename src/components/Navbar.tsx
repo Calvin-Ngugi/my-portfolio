@@ -1,7 +1,9 @@
+import {BsToggle2On, BsToggle2Off} from "react-icons/bs";
+
 const Navbar = ({ setIsDark, isDark }: any) => {
   return (
     <div className="flex justify-between w-screen m-auto pt-2">
-      <ul className="flex ms-3 justify-between w-[20%]">
+      <ul className="flex ms-3 justify-between w-[400px]">
         <li className="cursor-pointer ">Home</li>
         <li className="cursor-pointer ">About</li>
         <li className="cursor-pointer ">Projects</li>
@@ -9,10 +11,10 @@ const Navbar = ({ setIsDark, isDark }: any) => {
       </ul>
       <div className="me-3">
         <button
-          className={`border-2 bg-secondary text-white cursor-pointer hover:text-black hover:bg-primary p-1`}
+          className={`border-2 p-1`}
           onClick={() => setIsDark(!isDark)}
         >
-          {isDark ? "Light Mode" : "Dark Mode"}
+          {isDark ? <BsToggle2On className="border-none w-[50px] h-6"/> : <BsToggle2Off className="border-none w-[50px] h-6"/>}
         </button>
       </div>
     </div>
