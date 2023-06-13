@@ -1,7 +1,7 @@
 const TechStacks = () => {
   return (
     <>
-      <div className="max-w-[70%] m-auto flex items-center gap-6 mt-10">
+      <div className="max-w-[70%] m-auto grid grid-cols-3 xs:grid-cols-6 lg:grid-cols-12 items-center lg:gap-6 gap-1 mt-10">
         Tech Stacks
         <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
           <img

@@ -23,7 +23,7 @@ const Header = ({ isDark }: any) => {
             </a>
           </div>
           <div
-            className={`sm:w-[160px] cursor-pointer flex items-center justify-between mt-5 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
+            className={`sm:w-[160px] cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
               isDark
                 ? `border-white hover:bg-slate-100 hover:text-slate-900`
                 : `border-black hover:bg-slate-900 hover:text-slate-100`
