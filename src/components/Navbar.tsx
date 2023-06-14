@@ -13,7 +13,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
   return (
     <>
       {/* desktop */}
-      <div className="hidden md:flex bg-inherit fixed justify-between w-[100%] m-auto pt-2">
+      <div className="hidden md:flex bg-inherit fixed justify-between w-[100%] m-auto pt-2 pb-2">
         <motion.ul
           initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
@@ -55,7 +55,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
           initial={{ opacity: 0, x: -200 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -200 }}
-          whileTap={{ scale: 0.5 }}
+          whileTap={{ scale: 0.8 }}
           className="me-10"
         >
           <button onClick={() => setIsDark(!isDark)}>
@@ -126,7 +126,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
           initial={{ opacity: 0, x: -200 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -200 }}
-          whileTap={{ scale: 0.5 }}
+          whileTap={{ scale: 0.8 }}
           className="me-5"
         >
           <button onClick={() => setIsDark(!isDark)}>

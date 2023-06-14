@@ -4,12 +4,12 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 const Header = ({ isDark }: any) => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:h-[70%] max-w-[70%] m-auto">
+      <div className="grid md:grid-cols-2 gap-2 md:h-[70%] max-w-[70%] m-auto">
         {/* left */}
-        <div className="flex flex-col mt-16 md:mt-20">
+        <div className="flex flex-col mt-16 md:mt-40">
           <p className="text-[40px]">Hi there!👋🏽 I'm</p>
           <p className="font-bold text-[45px]">Calvin</p>
-          <p className="text-base text-gray-600 md:w-[80%]">
+          <p className="text-gray-600 md:w-[80%]">
             A full-stack developer with a passion for developing 
             with experience building out applications, web and mobile, with the
             latest technologies. Connect with me on:
@@ -35,7 +35,7 @@ const Header = ({ isDark }: any) => {
         </div>
         {/* right */}
         <div className="flex flex-col md:justify-end items-start md:items-center">
-          <div className="flex">
+          <div className="flex ">
             <img
               src="urahara.PNG"
               alt=""
