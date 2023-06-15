@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const About = ({ controls, divRef }: any) => {
-  const [isTruncated, setIsTruncated] = useState(true);
+  const [isTruncated, setIsTruncated] = useState(false);
   const paragraphRef = useRef<HTMLParagraphElement>(null);
   const text =
     "I'm a Full Stack Web Developer with experience building out both consumer and startup applications, including web and mobile applications with the latest technologies. I am also conversant with computer hardware management and networking.";
@@ -34,6 +34,7 @@ const About = ({ controls, divRef }: any) => {
       animate={controls}
       transition={{ duration: 1 }}
       className="xl:w-[60%] w-[80%] md:w-[70%] flex flex-col justify-center pt-32 pb-5 opacity-0 m-auto"
+      id="about"
     >
       <p className="font-bold text-center text-[32px] mb-8">About Me</p>
       <div className="h-[50%] grid grid-cols-1 sm:grid-cols-2 bg-blue-500 rounded-2xl mb-5">
@@ -54,7 +55,7 @@ const About = ({ controls, divRef }: any) => {
               isTruncated ? "cursor-pointer" : ""
             }`}
           >
-            {isTruncated ? text.slice(0, maxLines * 50) + "..." : text}
+            {isTruncated ? text.slice(0, maxLines * 40) + "..." : text}
           </p>
           {isTruncated && (
             <button

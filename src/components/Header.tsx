@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 const Header = ({ isDark }: any) => {
   return (
     <>
-      <div className="grid md:grid-cols-2 gap-2 md:h-[70%] max-w-[70%] m-auto">
+      <div className="grid md:grid-cols-2 gap-2 md:h-[70%] max-w-[70%] m-auto" id="home">
         {/* left */}
         <div className="flex flex-col mt-16 md:mt-40">
           <p className="text-[40px]">Hi there!👋🏽 I'm</p>

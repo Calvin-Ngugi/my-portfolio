@@ -22,20 +22,22 @@ const Navbar = ({ setIsDark, isDark }: any) => {
             isDark ? `text-gray-300` : `text-gray-600`
           }`}
         >
-          <li
+          <a
+            href="#home"
             className={`cursor-pointer ${
               isDark ? `hover:text-white` : `hover:text-slate-900`
             }`}
           >
             Home
-          </li>
-          <li
+          </a>
+          <a
+            href="#about"
             className={`cursor-pointer ${
               isDark ? `hover:text-white` : `hover:text-slate-900`
             }`}
           >
             About
-          </li>
+          </a>
           <li
             className={`cursor-pointer ${
               isDark ? `hover:text-white` : `hover:text-slate-900`
@@ -87,7 +89,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
             className={`bg-inherit w-30 shadow-xl flex flex-col rounded-lg absolute top-10 left-1`}
           >
             <ul className="flex flex-col gap-5 px-8 py-2">
-                <a hrefLang="#home">
+                <a href="#home">
                   <li
                     onClick={() => setIsMenu(false)}
                     className="duration-100 transition-all ease-in-out cursor-pointer"
@@ -95,7 +97,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
                     Home
                   </li>
                 </a>
-                <a hrefLang="#about">
+                <a href="#about">
                   <li
                     onClick={() => setIsMenu(false)}
                     className="duration-100 transition-all ease-in-out cursor-pointer"
@@ -103,7 +105,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
                     About
                   </li>
                 </a>
-                <a hrefLang="#projects">
+                <a href="#projects">
                   <li
                     onClick={() => setIsMenu(false)}
                     className="duration-100 transition-all ease-in-out cursor-pointer"
@@ -111,7 +113,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
                     Projects
                   </li>
                 </a>
-                <a hrefLang="#contact">
+                <a href="#contact">
                   <li
                     onClick={() => setIsMenu(false)}
                     className="duration-100 transition-all ease-in-out cursor-pointer"
