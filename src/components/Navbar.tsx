@@ -38,20 +38,22 @@ const Navbar = ({ setIsDark, isDark }: any) => {
           >
             About
           </a>
-          <li
+          <a
+            href="#projects"
             className={`cursor-pointer ${
               isDark ? `hover:text-white` : `hover:text-slate-900`
             }`}
           >
             Projects
-          </li>
-          <li
+          </a>
+          <a
+            href="#contact"
             className={`cursor-pointer ${
               isDark ? `hover:text-white` : `hover:text-slate-900`
             }`}
           >
             Contact
-          </li>
+          </a>
         </motion.ul>
         <motion.div
           initial={{ opacity: 0, x: -200 }}
