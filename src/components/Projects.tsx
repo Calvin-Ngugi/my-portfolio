@@ -11,11 +11,13 @@ const Projects = ({ isDark }: any) => {
           }`}
         >
           <img src="e-waiter.PNG" alt="" className="h-[60%] mb-3" />
+          <h2 className="text-center mb-2 font-semibold">E-waiter App</h2>
           <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-            quos iure, sed eaque exercitationem dignissimos aut inventore
+            The E-waiter app is an app that can be used in restaurants to place
+            orders. Once an order is placed it reflects on the staff side and on
+            the orders tab. It is created using react and firebase
           </p>
-          <div className="w-[100%] flex justify-around mt-5">
+          <div className="w-[100%] flex justify-around mt-3">
             <button
               className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
                 isDark
@@ -56,11 +58,13 @@ const Projects = ({ isDark }: any) => {
           }`}
         >
           <img src="anime.PNG" alt="" className="h-[60%] mb-3" />
+          <h2 className="text-center mb-2 font-semibold">Anime Merch Site</h2>
           <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-            quos iure, sed eaque exercitationem dignissimos aut inventore
+            This project is an anime merchandise ecommerce site. Merch such as
+            tshirts, hoodies and keychains are available. There is also a
+            contribution form. It's created using react
           </p>
-          <div className="w-[100%] flex justify-around mt-5">
+          <div className="w-[100%] flex justify-around mt-3">
             <button
               className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
                 isDark
@@ -101,11 +105,13 @@ const Projects = ({ isDark }: any) => {
           }`}
         >
           <img src="techware.PNG" alt="" className="h-[60%] mb-3" />
+          <h2 className="text-center mb-2 font-semibold">Techware Ent. Ltd.</h2>
           <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-            quos iure, sed eaque exercitationem dignissimos aut inventore
+            This is an ecommerce website that I build for a company called
+            Techware Enterprises Ltd. It is created using wordpress and the
+            payment system uses PayPal.
           </p>
-          <div className="w-[100%] flex justify-around mt-5">
+          <div className="w-[100%] flex justify-around mt-3">
             <button
               className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
                 isDark
