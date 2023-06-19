@@ -1,6 +1,14 @@
+import { motion } from 'framer-motion';
 const Projects = ({ isDark }: any) => {
   return (
-    <div className="w-[80%] md:w-[70%] pt-28 pb-5 m-auto" id="projects">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 5 }}
+      className="w-[80%] md:w-[70%] pt-28 pb-5 m-auto"
+      id="projects"
+    >
       <h1 className="text-center mb-5 font-bold text-[32px]">Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         <div
@@ -165,7 +173,7 @@ const Projects = ({ isDark }: any) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

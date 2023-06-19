@@ -23,7 +23,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
           }`}
         >
           <a
-            href="#home"
+            href="/"
             className={`cursor-pointer ${
               isDark ? `hover:text-white` : `hover:text-slate-900`
             }`}
