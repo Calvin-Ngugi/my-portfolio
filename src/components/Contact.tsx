@@ -41,7 +41,7 @@ const Contact = () => {
               Message:
             </label>
             <textarea
-              className="h-24 p-3 rounded-lg"
+              className="h-24 w-[220px] sm:w-[100%] p-3 rounded-lg"
               name="message"
               placeholder="Enter your message"
             ></textarea>
