@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { BiDownload } from "react-icons/bi";
 
-const About = ({ controls, divRef }: any) => {
+const About = ({ controls, divRef, isDark }: any) => {
   const [isTruncated, setIsTruncated] = useState(false);
   const paragraphRef = useRef<HTMLParagraphElement>(null);
   const text =
     "I'm a Full Stack Web Developer with experience building out both consumer and startup applications, including web and mobile applications with the latest technologies. I am also conversant with computer hardware management and networking.";
-  const maxLines = 4;
+  const maxLines = 3;
 
   useEffect(() => {
     const paragraphElement = paragraphRef.current;
@@ -40,15 +41,15 @@ const About = ({ controls, divRef }: any) => {
       <div className="h-[50%] grid grid-cols-1 sm:grid-cols-2 bg-blue-500 rounded-2xl mb-5">
         <div className="object-cover">
           <img
-            src="https://lh3.googleusercontent.com/RMtbZs6s0lFReF1Jt7fJMFfbmSnlMr8PgeKbm0kf4GiSS7YuVbU6vz5FBiHDDhGd5IK1o7pyqY8Gyma56R6xJlNyS1LYkui8AXvmICLnPlkooAazKrY9oGampikCSUJw7y3eRxEu6fJjO2WoWFJ9CEqCH5MyD0CU5iFTuh8jpVuUKYqvG1hdxyrJh1lMrzcUMg8tPbEN1v_JOxeExY7FCHDnp1gxZpbNlyiTcfRDqufxhVlSKkFj8oFlLKm2Dop7toXXxVhwgQ12tTG8J3YWtshPMrGFQTOUhazTLFHC_5feysW4dLvTGtbCpPlpp0jP2a03kCVZErXIbvttdJ0yTK-ix_qNV4y0pTYzR33MCb07jQU3vZ9hgGIBmwUYNk8B7C8per5nTL7CFE_aFXTxYrthf_BllzcntAMijv_Zt8qIHqwvJUBXLfxI-9J6rGzxR4HSLAeBtEtYj4zOJZC9eJnc_6aaokc-xDVJevt0y4FFTY_cBw08MzAAS74uERNNdyzKA9HSC0abrx2jxaLUcLFhHQ0K8S1uDft6Xmgu49-nykUIagZXbkhco2HpZBzMdCkT3AzI0teiDeEkVJ21tMuT9FFWqZaF-exidhsorsqmudy1C5UbJ_BDVvQ4uY8-5Vz91KCYRCNXvb11LC2JzDeQPF3G3fzdXhq2QS1NT0OVXnXuYQEORbgYat4gVvKU4KHWC7WLYBY1yK9M-PN9Fb8lNabtU-J4Dse_GvcnJdTNkpI1s31x6sjWLxUoux7PzFw_2noCHqLUOufI4W3DbqcvmupMJnpHL81bb6oOt_WxRhtYfVEpIbqggWERHknpfF1iJo29AZgFy1KfKGG4wvwWZ8uY3xQGOzuAYGEXpH1KnvmyNiY082b3NClbeeiVgTX8z4FLNfMvGhXl9MFPH0QQ1ulICeB-IQFnUnoysfReKd-avIxqZIJwukkQtUYrNMnPu48Sy1yJGc6besdd7S8ZTd2RdE6P5C04qDhVIB7m3BvXdzS_vNQ19Fqa4Jbv1WzYNPi5E757i8C2lAZVOZ0NTEMc=w715-h954-s-no?authuser=0"
+            src="me.jpg"
             alt="aboutPic"
             className="rounded-xl object-cover sm:rounded-none sm:rounded-s-2xl sm:mb-0 mb-5"
           />
         </div>
         <div className="m-auto">
-          <p className="font-bold lg:text-[32px] text-[24px] sm:ms-5 sm:text-left text-center md:pe-5 sm:mb-3 mb-5">
+          <h2 className="font-bold lg:text-[32px] text-[24px] sm:ms-5 sm:text-left text-center md:pe-5 sm:mb-3 mb-5">
             FullStack developer based in Kenya 📍
-          </p>
+          </h2>
           <p
             ref={paragraphRef}
             className={`lg:text-[18px] sm:ms-5 sm:text-left text-center md:pe-5 sm:mb-0 mb-5truncate ${
@@ -57,14 +58,31 @@ const About = ({ controls, divRef }: any) => {
           >
             {isTruncated ? text.slice(0, maxLines * 40) + "..." : text}
           </p>
-          {isTruncated && (
+          {isTruncated ? (
             <button
-              className="hover:underline sm:ms-5 sm:text-left ms-4 font-semibold mt-2"
+              className="hover:underline sm:ms-6 w-[90%] sm:text-start ms-4 font-semibold mt-2"
               onClick={toggleTruncate}
             >
               Read More
             </button>
+          ) : (
+            <button
+              className="hover:underline sm:ms-6 ms-4 w-[90%] sm:text-start font-semibold mt-2"
+              onClick={toggleTruncate}
+            >
+              View Less
+            </button>
           )}
+          <button
+            className={`ms-5 cursor-pointer flex items-center justify-center mt-7 ps-4 font-semibold mb-4 p-2 border-2 rounded-xl ${
+              isDark
+                ? `border-white hover:bg-slate-100 hover:text-slate-900 hover:font-semibold`
+                : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
+            }`}
+          >
+            Download CV
+            <BiDownload className="ps-2 w-8 h-6" />
+          </button>
         </div>
       </div>
     </motion.div>

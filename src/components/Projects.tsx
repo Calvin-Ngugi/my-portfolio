@@ -61,7 +61,7 @@ const Projects = ({ isDark }: any) => {
           <h2 className="text-center mb-2 font-semibold">Anime Merch Site</h2>
           <p className="text-center">
             This project is an anime merchandise ecommerce site. Merch such as
-            tshirts, hoodies and keychains are available. There is also a
+            t-shirts, hoodies and keychains are available. There is also a
             contribution form. It's created using react
           </p>
           <div className="w-[100%] flex justify-around mt-3">
@@ -125,6 +125,41 @@ const Projects = ({ isDark }: any) => {
                 rel="noreferrer"
               >
                 View Live
+              </a>
+            </button>
+          </div>
+        </div>
+        <div
+          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${
+            isDark
+              ? `bg-slate-950 border-gray-800`
+              : `bg-slate-200 border-gray-200`
+          }`}
+        >
+          <img src="scheduler.PNG" alt="" className="h-[60%] mb-3" />
+          <h2 className="text-center mb-2 font-semibold">
+            Class Scheduling App
+          </h2>
+          <p className="text-center">
+            This app helps students register for courses and attend their
+            sessions.The lecturers can add sessions, change their time and check
+            the number of student logged in to the app. It was created using
+            ruby and react
+          </p>
+          <div className="w-[100%] flex justify-around mt-3">
+            <button
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
+                isDark
+                  ? `border-white text-green-600 hover:bg-slate-100 hover:text-blue-950 hover:font-semibold`
+                  : `border-black text-blue-950 hover:bg-slate-900 hover:text-green-600 hover:font-semibold`
+              }`}
+            >
+              <a
+                href="https://github.com/Calvin-Ngugi/class-scheduler"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
               </a>
             </button>
           </div>

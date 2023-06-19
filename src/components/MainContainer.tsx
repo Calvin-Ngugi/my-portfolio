@@ -31,8 +31,8 @@ const MainContainer = ({ isDark }: any) => {
     <div className="min-h-screen m-auto">
       <Header isDark={isDark} />
       <TechStacks />
-      <About controls={controls} divRef={divRef} />
-      <Projects isDark={ isDark} />
+      <About controls={controls} divRef={divRef} isDark={isDark} />
+      <Projects isDark={isDark} />
     </div>
   );
 };
