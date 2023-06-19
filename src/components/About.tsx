@@ -80,8 +80,10 @@ const About = ({ controls, divRef, isDark }: any) => {
                 : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
             }`}
           >
-            Download CV
+            <a className="flex" href="CV-Calvin.pdf" download="Calvin's CV.pdf">
+              Download CV
             <BiDownload className="ps-2 w-8 h-6" />
+            </a>
           </button>
         </div>
       </div>
