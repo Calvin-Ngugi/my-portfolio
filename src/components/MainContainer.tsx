@@ -5,6 +5,7 @@ import TechStacks from "./TechStacks";
 import { useAnimation } from "framer-motion";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Education from "./Education";
 
 const MainContainer = ({ isDark }: any) => {
   const divRef = useRef<Element | null>(null);
@@ -34,6 +35,7 @@ const MainContainer = ({ isDark }: any) => {
       <TechStacks />
       <About controls={controls} divRef={divRef} isDark={isDark} />
       <Projects isDark={isDark} />
+      <Education />
       <Contact />
     </div>
   );
