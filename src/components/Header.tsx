@@ -28,18 +28,18 @@ const Header = ({ isDark }: any) => {
               <BsGithub className="h-5 w-5" />
             </a>
           </div>
-          <div
-            className={`sm:w-[170px] cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-              isDark
-                ? `border-white hover:bg-slate-100 hover:text-slate-900`
-                : `border-black hover:bg-slate-900 hover:text-slate-100`
-            }`}
-          >
-            <button className={`border-transparent`}>
-              <a href="#contact">Contact Me</a>
-            </button>
-            <BiRightArrowCircle className="w-8 h-7 ms-4" />
-          </div>
+          <a href="#contact">
+            <div
+              className={`sm:w-[170px] cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
+                isDark
+                  ? `border-white hover:bg-slate-100 hover:text-slate-900`
+                  : `border-black hover:bg-slate-900 hover:text-slate-100`
+              }`}
+            >
+              <button className={`border-transparent`}>Contact Me</button>
+              <BiRightArrowCircle className="w-8 h-7 ms-4" />
+            </div>
+          </a>
         </div>
         {/* right */}
         <div className="flex flex-col md:justify-end items-start md:items-center">
