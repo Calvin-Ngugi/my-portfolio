@@ -13,7 +13,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
   return (
     <>
       {/* desktop */}
-      <div className="hidden md:flex bg-inherit fixed justify-between w-[100%] m-auto pt-2 pb-2">
+      <div className="hidden md:flex bg-inherit justify-between w-[80%] m-auto pt-2 pb-2">
         <motion.ul
           initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
