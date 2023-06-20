@@ -30,7 +30,6 @@ const Work = () => {
   ];
   return (
     <>
-      <h1 className="font-bold text-[24px] text-center mb-5">Work Experience</h1>
       <HorizontalTimeline events={events} />
     </>
   );

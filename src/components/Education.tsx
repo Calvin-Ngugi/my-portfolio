@@ -30,7 +30,7 @@ const Education = () => {
   ];
   return (
     <>
-      <h1 className="font-bold text-[24px] text-center mb-5">Education</h1>
+      
       <HorizontalTimeline events={events} />
     </>
   );

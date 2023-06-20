@@ -36,7 +36,7 @@ const HorizontalTimeline = ({ events }: any) => {
       >
         {events.map((event: any, index: any) => (
           <div
-            className="event p-8 ps-4 border-t-2 border-t-black relative"
+            className="event p-8 ps-4 border-t-2 border-t-gray-400 relative"
             key={index}
           >
             <div className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gray-400 rounded-full"></div>

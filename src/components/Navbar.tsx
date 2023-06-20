@@ -72,7 +72,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
         </motion.div>
       </div>
       {/* mobile */}
-      <div className="bg-inherit fixed flex md:hidden justify-between w-[100%] m-auto pt-2">
+      <div className="bg-inherit sticky flex md:hidden justify-between w-[100%] m-auto pt-2">
         <motion.div
           initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
