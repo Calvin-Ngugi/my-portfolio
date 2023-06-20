@@ -45,7 +45,7 @@ const Contact = () => {
                 Name:
               </label>
               <input
-                className="h-10 lg:w-[300px] p-3 rounded-lg"
+                className="h-10 lg:w-[300px] p-3 rounded-lg text-black"
                 type="text"
                 name="name"
                 required
@@ -57,19 +57,19 @@ const Contact = () => {
                 Email:
               </label>
               <input
-                className="h-10 p-3 lg:w-[300px] rounded-lg"
+                className="h-10 p-3 lg:w-[300px] rounded-lg text-black"
                 type="email"
                 name="email"
                 required
                 placeholder="Enter your email"
               />
             </div>
-            <div className="flex flex-col rounded-lg p-2">
+            <div className="flex flex-col rounded-lg p-2 ">
               <label className="font-semibold ps-2" htmlFor="textarea">
                 Message:
               </label>
               <textarea
-                className="h-24 p-3 lg:w-[300px] rounded-lg"
+                className="h-24 p-3 lg:w-[300px] rounded-lg text-black"
                 name="message"
                 placeholder="Enter your message"
               ></textarea>
