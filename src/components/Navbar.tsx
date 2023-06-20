@@ -18,7 +18,7 @@ const Navbar = ({ setIsDark, isDark }: any) => {
           initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 200 }}
-          className={`md:flex ms-10 mt-2 justify-between w-[300px] ${
+          className={`md:flex ms-10 mt-2 gap-4 ${
             isDark ? `text-gray-300` : `text-gray-600`
           }`}
         >

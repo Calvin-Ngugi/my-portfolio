@@ -3,7 +3,7 @@ import HorizontalTimeline from "./HorizontalTimeline";
 const Education = () => {
   const events = [
     {
-      date: "July 2021 - February 2022",
+      date: "July 2022 - February 2023",
       title: "Moringa School",
       description: "Software Engineering Certificate",
     },
@@ -29,10 +29,10 @@ const Education = () => {
     },
   ];
   return (
-    <div>
+    <>
       <h1 className="font-bold text-[24px] text-center mb-5">Education</h1>
       <HorizontalTimeline events={events} />
-    </div>
+    </>
   );
 };
 

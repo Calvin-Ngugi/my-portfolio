@@ -44,7 +44,7 @@ const HorizontalTimeline = ({ events }: any) => {
               {event.title}
             </div>
             <div className="event-date mb-2 text-[14px]">{event.date}</div>
-            <div className="event-description w-[210px] text-[16px]">
+            <div className="event-description w-[230px] text-[16px]">
               {event.description}
             </div>
           </div>
