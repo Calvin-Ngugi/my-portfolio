@@ -6,6 +6,7 @@ import { useAnimation } from "framer-motion";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Qualification from "./Qualification";
+import Socials from "./Socials";
 
 const MainContainer = ({ isDark }: any) => {
   const divRef = useRef<Element | null>(null);
@@ -34,6 +35,7 @@ const MainContainer = ({ isDark }: any) => {
       <Header isDark={isDark} />
       <TechStacks />
       <About controls={controls} divRef={divRef} isDark={isDark} />
+      <Socials />
       <Projects isDark={isDark} />
       <Qualification />
       <Contact />
