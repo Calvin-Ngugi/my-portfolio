@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const Navbar = ({ setIsDark, isDark }: any) => {
-  const [isMenu, setIsMenu] = useState(false);
+ const [isMenu, setIsMenu] = useState(false);
 
   const handleClick = () => {
     setIsMenu(!isMenu);
-  };
+  }; 
 
   return (
     <>

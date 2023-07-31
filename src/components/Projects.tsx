@@ -58,6 +58,7 @@ const Projects = ({ isDark }: any) => {
             </button>
           </div>
         </div>
+
         <div
           className={`p-4 border-[2px]  rounded-xl flex flex-col items-center ${
             isDark
@@ -133,6 +134,54 @@ const Projects = ({ isDark }: any) => {
                 rel="noreferrer"
               >
                 View Live
+              </a>
+            </button>
+          </div>
+        </div>
+        <div
+          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${
+            isDark
+              ? `bg-slate-950 border-gray-800`
+              : `bg-slate-200 border-gray-200`
+          }`}
+        >
+          <img src="connectify.PNG" alt="" className="h-[60%] mb-3" />
+          <h2 className="text-center mb-2 font-semibold">Connectify</h2>
+          <p className="text-center">
+            Connectify is a social platform that allows users to read posts and
+            follow users. To access all features one needs to be a premium
+            membership. Login details are the username and zipcode for{" "}
+            <a href="https://jsonplaceholder.typicode.com/users" className='font-semibold hover:font-bold hover:underline'>users</a>.
+          </p>
+          <div className="w-[100%] flex justify-around mt-3">
+            <button
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
+                isDark
+                  ? `border-white hover:bg-slate-100 hover:text-slate-900 hover:font-semibold`
+                  : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
+              }`}
+            >
+              <a
+                href="https://connectify-lime.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Live
+              </a>
+            </button>
+            <button
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
+                isDark
+                  ? `border-white text-green-600 hover:bg-slate-100 hover:text-blue-950 hover:font-semibold`
+                  : `border-black text-blue-950 hover:bg-slate-900 hover:text-green-600 hover:font-semibold`
+              }`}
+            >
+              <a
+                href="https://github.com/Calvin-Ngugi/social-platform"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
               </a>
             </button>
           </div>

@@ -45,7 +45,7 @@ const Header = ({ isDark }: any) => {
         <div className="flex flex-col md:justify-end items-start md:items-center">
           <div className="flex ">
             <img
-              src="urahara.PNG"
+              src="urahara.jpeg"
               alt=""
               className="max-h-80 max-w-80 rounded-full"
             />
