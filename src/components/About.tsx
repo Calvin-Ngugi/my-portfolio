@@ -41,7 +41,7 @@ const About = ({ controls, divRef, isDark }: any) => {
       <div className="h-[50%] grid grid-cols-1 sm:grid-cols-2 bg-blue-500 rounded-2xl mb-5">
         <div className="object-cover">
           <img
-            src="me.jpg"
+            src="me1.jpg"
             alt="aboutPic"
             className="rounded-xl object-cover sm:rounded-none sm:rounded-s-2xl sm:mb-0 mb-5"
           />
