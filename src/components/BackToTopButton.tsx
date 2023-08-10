@@ -25,7 +25,7 @@ const BackToTopButton = () => {
 
   return (
     <div
-      className={`fixed bottom-10 right-16 text-[30px] cursor-pointer transition-opacity ${isVisible ? "opacity-1" : "opacity-0"}`}
+      className={`fixed bottom-10 right-16 text-[30px] cursor-pointer transition-opacity ${isVisible ? "md:opacity-100 opacity-0" : "opacity-0"}`}
       onClick={scrollToTop}
     >
       <FaArrowCircleUp />
