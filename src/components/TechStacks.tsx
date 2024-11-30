@@ -39,6 +39,13 @@ const TechStacks = () => {
             className="w-10 h-20"
           />
         </a>
+        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+          <img
+            src="https://i18nexus.com/_next/static/media/nextjs.e54be70c.svg"
+            alt="nextjs"
+            className="w-10 h-20"
+          />
+        </a>
         <a href="https://angular.io" target="_blank" rel="noreferrer">
           <img
             src="https://angular.io/assets/images/logos/angular/angular.svg"
@@ -57,13 +64,6 @@ const TechStacks = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
             alt="bootstrap"
-            className="w-10 h-20"
-          />
-        </a>
-        <a href="https://rubyonrails.org" target="_blank" rel="noreferrer">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg"
-            alt="rails"
             className="w-10 h-20"
           />
         </a>

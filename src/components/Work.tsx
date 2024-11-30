@@ -3,7 +3,12 @@ import HorizontalTimeline from "./HorizontalTimeline";
 const Work = () => {
   const events = [
     {
-      date: "February 2023 - Present",
+      date: "October 2023 - present",
+      title: "AO Technology",
+      description: "Fullstack developer",
+    },
+    {
+      date: "February 2023 - September 2023",
       title: "iTalanta",
       description: "Open Source Software Developer - Intern",
     },

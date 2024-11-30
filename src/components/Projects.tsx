@@ -11,12 +11,57 @@ const Projects = ({ isDark }: any) => {
     >
       <h1 className="text-center mb-5 font-bold text-[32px]">Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div
-          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${
-            isDark
+      <div
+          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${isDark
               ? `bg-slate-950 border-gray-800`
               : `bg-slate-200 border-gray-200`
-          }`}
+            }`}
+        >
+          <img src="memory-lane.PNG" alt="" className="h-[60%] mb-3" />
+          <h2 className="text-center mb-2 font-semibold">
+            Memory Lane
+          </h2>
+          <p className="text-center">
+            This an app that allows the user to save and view their photos in an
+            album format. It also has authentication and authorization
+            It was made using next-js frontend and a supabase backend 
+          </p>
+          <div className="w-[100%] flex justify-around mt-3">
+            <button
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
+                  ? `border-white hover:bg-slate-100 hover:text-slate-900 hover:font-semibold`
+                  : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
+                }`}
+            >
+              <a
+                href="https://memory-lane-one.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Live
+              </a>
+            </button>
+            <button
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
+                  ? `border-white text-green-600 hover:bg-slate-100 hover:text-blue-950 hover:font-semibold`
+                  : `border-black text-blue-950 hover:bg-slate-900 hover:text-green-600 hover:font-semibold`
+                }`}
+            >
+              <a
+                href="https://github.com/Calvin-Ngugi/memory-lane"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+            </button>
+          </div>
+        </div>
+        <div
+          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${isDark
+              ? `bg-slate-950 border-gray-800`
+              : `bg-slate-200 border-gray-200`
+            }`}
         >
           <img src="lunar.PNG" alt="" className="h-[60%] mb-3" />
           <h2 className="text-center mb-2 font-semibold">
@@ -29,11 +74,10 @@ const Projects = ({ isDark }: any) => {
           </p>
           <div className="w-[100%] flex justify-around mt-3">
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white hover:bg-slate-100 hover:text-slate-900 hover:font-semibold`
                   : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://beauty-parlor.vercel.app/"
@@ -44,11 +88,10 @@ const Projects = ({ isDark }: any) => {
               </a>
             </button>
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white text-green-600 hover:bg-slate-100 hover:text-blue-950 hover:font-semibold`
                   : `border-black text-blue-950 hover:bg-slate-900 hover:text-green-600 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://github.com/Calvin-Ngugi/beauty-parlor"
@@ -61,11 +104,10 @@ const Projects = ({ isDark }: any) => {
           </div>
         </div>
         <div
-          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${
-            isDark
+          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${isDark
               ? `bg-slate-950 border-gray-800`
               : `bg-slate-200 border-gray-200`
-          }`}
+            }`}
         >
           <img src="e-waiter.PNG" alt="" className="h-[60%] mb-3" />
           <h2 className="text-center mb-2 font-semibold">E-waiter App</h2>
@@ -76,11 +118,10 @@ const Projects = ({ isDark }: any) => {
           </p>
           <div className="w-[100%] flex justify-around mt-3">
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white hover:bg-slate-100 hover:text-slate-900 hover:font-semibold`
                   : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://e-waiter.vercel.app/"
@@ -91,11 +132,10 @@ const Projects = ({ isDark }: any) => {
               </a>
             </button>
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white text-green-600 hover:bg-slate-100 hover:text-blue-950 hover:font-semibold`
                   : `border-black text-blue-950 hover:bg-slate-900 hover:text-green-600 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://github.com/Calvin-Ngugi/e-waiter"
@@ -109,11 +149,10 @@ const Projects = ({ isDark }: any) => {
         </div>
 
         <div
-          className={`p-4 border-[2px]  rounded-xl flex flex-col items-center ${
-            isDark
+          className={`p-4 border-[2px]  rounded-xl flex flex-col items-center ${isDark
               ? `bg-slate-950 border-gray-800`
               : `bg-slate-200 border-gray-200`
-          }`}
+            }`}
         >
           <img src="anime.PNG" alt="" className="h-[60%] mb-3" />
           <h2 className="text-center mb-2 font-semibold">Anime Merch Site</h2>
@@ -124,11 +163,10 @@ const Projects = ({ isDark }: any) => {
           </p>
           <div className="w-[100%] flex justify-around mt-3">
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white hover:bg-slate-100 hover:text-slate-900 hover:font-semibold`
                   : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://react-anime-merch-project.vercel.app/"
@@ -139,11 +177,10 @@ const Projects = ({ isDark }: any) => {
               </a>
             </button>
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white text-green-600 hover:bg-slate-100 hover:text-blue-950 hover:font-semibold`
                   : `border-black text-blue-950 hover:bg-slate-900 hover:text-green-600 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://github.com/Calvin-Ngugi/react-anime-merch-project"
@@ -156,11 +193,10 @@ const Projects = ({ isDark }: any) => {
           </div>
         </div>
         <div
-          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${
-            isDark
+          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${isDark
               ? `bg-slate-950 border-gray-800`
               : `bg-slate-200 border-gray-200`
-          }`}
+            }`}
         >
           <img src="techware.PNG" alt="" className="h-[60%] mb-3" />
           <h2 className="text-center mb-2 font-semibold">Techware Ent. Ltd.</h2>
@@ -172,11 +208,10 @@ const Projects = ({ isDark }: any) => {
           </p>
           <div className="w-[100%] flex justify-around mt-3">
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white hover:bg-slate-100 hover:text-slate-900 hover:font-semibold`
                   : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://techware.co.ke/"
@@ -189,11 +224,10 @@ const Projects = ({ isDark }: any) => {
           </div>
         </div>
         <div
-          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${
-            isDark
+          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${isDark
               ? `bg-slate-950 border-gray-800`
               : `bg-slate-200 border-gray-200`
-          }`}
+            }`}
         >
           <img src="connectify.PNG" alt="" className="h-[60%] mb-3" />
           <h2 className="text-center mb-2 font-semibold">Connectify</h2>
@@ -211,11 +245,10 @@ const Projects = ({ isDark }: any) => {
           </p>
           <div className="w-[100%] flex justify-around mt-3">
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white hover:bg-slate-100 hover:text-slate-900 hover:font-semibold`
                   : `border-black hover:bg-slate-900 hover:text-slate-100 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://connectify-lime.vercel.app/"
@@ -226,49 +259,13 @@ const Projects = ({ isDark }: any) => {
               </a>
             </button>
             <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
+              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${isDark
                   ? `border-white text-green-600 hover:bg-slate-100 hover:text-blue-950 hover:font-semibold`
                   : `border-black text-blue-950 hover:bg-slate-900 hover:text-green-600 hover:font-semibold`
-              }`}
+                }`}
             >
               <a
                 href="https://github.com/Calvin-Ngugi/social-platform"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Code
-              </a>
-            </button>
-          </div>
-        </div>
-        <div
-          className={`p-4 border-[2px] rounded-xl flex flex-col items-center ${
-            isDark
-              ? `bg-slate-950 border-gray-800`
-              : `bg-slate-200 border-gray-200`
-          }`}
-        >
-          <img src="scheduler.PNG" alt="" className="h-[60%] mb-3" />
-          <h2 className="text-center mb-2 font-semibold">
-            Class Scheduling App
-          </h2>
-          <p className="text-center">
-            This app helps students register for courses and attend their
-            sessions.The lecturers can add sessions, change their time and check
-            the number of student logged in to the app. It was created using
-            ruby and react
-          </p>
-          <div className="w-[100%] flex justify-around mt-3">
-            <button
-              className={`cursor-pointer flex items-center justify-between mt-7 ps-4 pe-4 pt-2 pb-2 sm:p-2 border-2 rounded-xl ${
-                isDark
-                  ? `border-white text-green-600 hover:bg-slate-100 hover:text-blue-950 hover:font-semibold`
-                  : `border-black text-blue-950 hover:bg-slate-900 hover:text-green-600 hover:font-semibold`
-              }`}
-            >
-              <a
-                href="https://github.com/Calvin-Ngugi/class-scheduler"
                 target="_blank"
                 rel="noreferrer"
               >
